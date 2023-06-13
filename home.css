@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 .home-logo {
-  height: 2rem;
+  height: var(--dl-size-size-medium);
 }
 .home-desktop-menu {
   display: flex;
@@ -127,10 +127,23 @@
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+.home-image1 {
+  width: 200px;
+  object-fit: cover;
+}
+@media(max-width: 1200px) {
+  .home-image1 {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media(max-width: 767px) {
   .home-navbar-interactive {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+  }
+  .home-logo {
+    height: var(--dl-size-size-small);
   }
   .home-desktop-menu {
     display: none;
