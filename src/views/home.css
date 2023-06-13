@@ -128,7 +128,8 @@
   height: var(--dl-size-size-xsmall);
 }
 .home-image1 {
-  width: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 @media(max-width: 1200px) {
